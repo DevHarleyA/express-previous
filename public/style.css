@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background: url('stars.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+/* Clearfix Hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+
+/* Header Styling */
+
+header {
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    color: white;
+    background: black;
+    margin: 3% 15% 0 15%;
+    padding: 1%;
+}
+
+.subTitle {
+    color: white;
+    font-size: 2.5rem;
+    background: black;
+    margin: 0 15% 2% 15%;
+    font-style: italic;
+}
+
+/* Main Styling */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.one, .two {
+    background: black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 40%;
+    padding: 2%;
+}
+
+/* Main Left */
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    height: 200px;
+}
+
+/* Main Right */
+
+.block {
+    display: block;
+}
+
+/* Footer Styling */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,.8);
+    font-size: 1.5rem;
+}
+
+.dos {
+    margin: 0;
+}
+
+small {
+    margin: 0;
+}
+
+li {
+    margin: 1%;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+    transition: color .5s
+}
+
+a:hover {
+    color: red;
+}

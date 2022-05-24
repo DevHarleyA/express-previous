@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remixed: Dope Horoscope Jawn Pt. 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/265ed8ed5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/normalize.css">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <h1 class="title">Dope Horoscope Generator <i>Express</i></h1>
+            <p class="subTitle">What is your sign?</p>
+        </header>
+        <main class="content-wrap">
+            <section class="box one">
+                <section class="formOne">
+                    <form>
+                        <label for="month"> Month: </label>
+                        <select id="month" name="months">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                        <label for="day"> Day: </label>
+                        <select id="day" name="days">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <button class="submit">Show me my destiny...</button>
+                    </form>
+                </section>
+                <section class="results">
+                    <h3 id="zodiacSign"></h3>
+                    <p id="signDescription"></p>
+                    <img src="" alt="" id="zodiacPic">
+                    <h5>Zodiac Chibi by Lily Fu</h5>
+                    <ul class="social uno">
+                        <li><i class="fa-brands fa-instagram fa-large"></i> Lily_fu_art</li>
+                        <li><i class="fa-solid fa-laptop fa-large"></i><a href="https://www.lily-fu.com">
+                                lily-fu.com</a></li>
+                        <!-- font size 1.25rem -->
+                    </ul>
+                </section>
+            </section>
+            <section class="box two">
+                <section>
+                    <form action="">
+                        <label for="team">Enter Your Zodiac Team: </label>
+                        <select id="team" name="team" required>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                        <label for="message" class="block">Rep yo Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="2" placeholder="big up ya sign"
+                            required></textarea>
+                    </form>
+                </section>
+                <section>
+                    <h4>Rep Your Sign</h4>
+                    <p>Leave a message and rep your sign! Keep it civil. 😎</p>
+                    <!-- fa-xl is 1.5em -->
+                    <ul class="posts">
+                        <!-- 
+                    <% for(let i = 0; i < posts.length; i++) {%>
+                        <li class="posts">
+                            <span><%= posts[i].team %></span>
+                            <span><%= posts[i].message %></span>
+                            <span><%= posts[i].flame %></span>
+                            <span><i class="fa-solid fa-fire fa-xl"></i></span>
+                            
+                        </li>
+                    <% } %>
+                -->
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <footer class="footer clearfix">
+                <ul class="social dos">
+                    <li><i class="fa-solid fa-code"></i> Visit my <a href="https://aharleydev.netlify.app/" target="_blank">Portfolio</a></li>
+                    <li><i class="fa-brands fa-twitter"></i> Follow me on <a href="https://twitter.com/DevHarleyA" target="_blank">Twitter</a></li>
+                </ul>
+                <small>&copy; HarleyADev 2022</small>
+        </footer>
+    </div>
+    <script src="public/main.js"></script>
+</body>
+
+</html>

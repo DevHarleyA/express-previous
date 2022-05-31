@@ -1,5 +1,23 @@
-document.querySelector('.submit').addEventListener('click', horoscopeTime)
+document.querySelector('.submit').addEventListener('click', horoscopeCheck)
 
+
+function horoscopeCheck(e) {
+    e.preventDefault()
+    const month = document.querySelector('#month').value
+    const day = document.querySelector('#day').value
+    const url = `/horoscopeAPI/?month=${month}&day=${day}`
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+        })
+        .catch(err => {
+            console.log(`error ${err}`)
+        })
+}
+
+/*
 function horoscopeTime() {
     const month = document.querySelector('#month').value
     const day = document.querySelector('#day').value
@@ -7,7 +25,7 @@ function horoscopeTime() {
     if ((month === 'january') && (day >= 20 && day <= 31) || (month === 'february') && (day >= 1 && day <= 18)) {
         document.querySelector('#zodiacSign').innerText='Aquarius, Baby'
         document.querySelector('#signDescription').innerText='You\'re an air sign! You possess the following strengths: Progressive, original, independent, and humanitarian.'
-        document.querySelector('#zodiacPic').src="public/aquarius.png"
+        document.querySelector('#zodiacPic').src="aquarius.png"
         document.querySelector('.results').style.backgroundColor = "black"
         document.querySelector('.results').style.color = "#3c8488"
     } else if ((month === 'february') && (day >= 19 && day <= 29) || (month === 'march') && (day >= 1 && day <= 20)) {
@@ -83,3 +101,4 @@ function horoscopeTime() {
         document.querySelector('.results').style.backgroundColor = "lightblue"
     }
 } 
+*/

@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/265ed8ed5a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public/normalize.css">
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -91,44 +91,42 @@
             </section>
             <section class="box two">
                 <section>
-                    <form action="">
+                    <form action="/reps" method="POST">
                         <label for="team">Enter Your Zodiac Team: </label>
                         <select id="team" name="team" required>
-                            <option value="january">January</option>
-                            <option value="february">February</option>
-                            <option value="march">March</option>
-                            <option value="april">April</option>
-                            <option value="may">May</option>
-                            <option value="june">June</option>
-                            <option value="july">July</option>
-                            <option value="august">August</option>
-                            <option value="september">September</option>
-                            <option value="october">October</option>
-                            <option value="november">November</option>
-                            <option value="december">December</option>
+                            <option value="Aries Gang">Aries</option>
+                            <option value="Taurus Gang">Taurus</option>
+                            <option value="Gemini Gang">Gemini</option>
+                            <option value="Cancer Gang">Cancer</option>
+                            <option value="Leo Gang">Leo</option>
+                            <option value="Virgo Gang">Virgo</option>
+                            <option value="Libra Gang">Libra</option>
+                            <option value="Scorpio Gang">Scorpio</option>
+                            <option value="Sagittarius Gang">Sagittarius</option>
+                            <option value="Capricorn Gang">Capricorn</option>
+                            <option value="Aquarius Gang">Aquarius</option>
+                            <option value="Pisces Gang">Pisces</option>
                         </select>
                         <label for="message" class="block">Rep yo Message:</label>
                         <textarea name="message" id="message" cols="30" rows="2" placeholder="big up ya sign"
                             required></textarea>
-                        <button class="submitTwo"></button>
+                        <button class="submitTwo">Rep yo Sign!</button>
                     </form>
                 </section>
                 <section>
                     <h4>Rep Your Sign</h4>
                     <p>Leave a message and rep your sign! Keep it civil. 😎</p>
                     <!-- fa-xl is 1.5em -->
-                    <ul class="posts">
-                        <!-- 
-                    <% for(let i = 0; i < posts.length; i++) {%>
-                        <li class="posts">
-                            <span><%= posts[i].team %></span>
-                            <span><%= posts[i].message %></span>
-                            <span><%= posts[i].flame %></span>
+                    <ul class="reps">
+                    <% for(let i = 0; i < reps.length; i++) {%>
+                        <li class="messages">
+                            <span><%= reps[i].team %></span>
+                            <span><%= reps[i].message %></span>
+                            <span><%= reps[i].reps %></span>
                             <span><i class="fa-solid fa-fire fa-xl"></i></span>
                             
                         </li>
                     <% } %>
-                -->
                     </ul>
                 </section>
             </section>
@@ -141,7 +139,7 @@
                 <small>&copy; HarleyADev 2022</small>
         </footer>
     </div>
-    <script src="public/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
